@@ -56,7 +56,7 @@ namespace AutoStop
             Losses = 0;
             Concedes = 0;
             bool useWildMedal = DefaultBotSettings.Instance.ConstructedMode.Equals("狂野模式");
-            int currentRank = SimpleRankMgr.Get().GetLocalPlayerMedalInfo().GetCurrentMedal(useWildMedal).GetLegacyRankNumber() + SimpleRankMgr.Get().GetLocalPlayerMedalInfo().GetCurrentMedal(true).earnedStars;
+            int currentRank = SimpleRankMgr.Get().GetLocalPlayerMedalInfo().GetCurrentMedal(useWildMedal).GetLegacyRankNumber();
             Rank = currentRank;
         }
 
